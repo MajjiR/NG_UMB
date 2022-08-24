@@ -2,7 +2,7 @@ import mahotas as mh
 import cv2
 
 import os
-path = "data/Folder/Folder"
+path = "data/Source/Stacks"
 images = [f for f in os.listdir(path) if '.tif' in f.lower()]
 
 
