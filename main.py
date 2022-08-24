@@ -6,7 +6,7 @@ import mahotas
 
 ########################################################################################################################
 
-"""CREATING TEMP FOLDER"""
+""" CREATING TEMP FOLDER """
 
 temp_folder = tempfile.TemporaryDirectory()
 temp_folder_path = temp_folder.name
