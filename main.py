@@ -98,7 +98,7 @@ height = image.shape[0]
 width = image.shape[1]
 
 if image.ndim == 2:
-    channels = 1  #grayscale
+    channels = 1  # grayscale
 
 if image.ndim == 3:
     channels = image.shape[-1]
@@ -131,7 +131,7 @@ with open('data.json', 'w') as f:
 os.system("rm -r output")
 os.system("mkdir output")
 os.system("generate-scales-info data.json output")
-os.system("slices-to-precomputed --input-orientation RPS " + temp_folder_path_0 + " " + "output")
+os.system("slices-to-precomputed --input-orientation RPS {} output".format(temp_folder_path_0))
 
 # USE THE BELOW COMMAND TO RUN SCRIPTS ON CONVERTED SAMPLE JPEG STACK IN THE IMAGES FOLDER, DEBUG PURPOSE
-# os.system("slices-to-precomputed --input-orientation RPS "+ "images" + " "+ "output")
+# os.system("slices-to-precomputed --input-orientation RPS "+ "images "+ "output")
